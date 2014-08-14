@@ -12,6 +12,9 @@
     <%= v %>
   </div>
 <% end %>
+<% if user_signed_in? %>
+  Signed in as <%= current_user.email %>
+<% end %>
 <%= yield %>
 
 </body>
